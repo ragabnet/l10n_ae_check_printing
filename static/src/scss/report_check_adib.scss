@@ -1,0 +1,105 @@
+/*
+ *  WARNING : wkhtml2pdf will interpret measurement units according to the total
+ *  width of the document. That means that if an element overflows from the page
+ *  (eg. left: 7.5in; width: 2in;) all the dimensions will be scaled down.
+*/
+
+.ckae_adib_page {
+  position: relative;
+  width: 165mm;
+  //height: 77mm;
+  zoom: 1.25;
+  //margin-left: -15px;
+  //margin-right: -15px;
+  //border: 2px solid black;
+  font-family: monospace;
+  font-size: 8pt;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 18px;
+
+  .row > * {
+    width: auto;
+  }
+
+  &:after {
+    display: block;
+    content: ".";
+    width: 165mm;
+    visibility: hidden;
+  }
+
+  .ckae_adib_check > * {
+    position: absolute;
+  }
+
+  .ckae_adib_check {
+    position: relative;
+
+    .ckae_adib_sequence_number {
+      right: 71px;
+      width: 89px;
+      top: 30px;
+      text-align: right;
+    }
+
+    .ckae_adib_date {
+      right: 44px;
+      width: 120px;
+      top: 51px;
+      text-align: center;
+    }
+
+    .ckae_adib_company_branch {
+      left: 118px;
+      width: 280px;
+      top: 51px;
+      text-align: center;
+    }
+
+    .ckae_adib_cross_bearer {
+      left: 27px;
+      width: 80px;
+      top: 82px;
+      text-align: left;
+    }
+
+    .ckae_adib_payee_name {
+      left: 96px;
+      width: 210px;
+      top: 75px;
+      text-align: center;
+      line-height: 23px;
+    }
+
+    .ckae_adib_amount {
+      right: 27px;
+      width: 120px;
+      top: 121px;
+      text-align: center;
+    }
+
+    .ckae_adib_amount_in_word {
+      left: 50px;
+      width: 320px;
+      top: 125px;
+      text-align: left;
+      line-height: 23px;
+      -webkit-hyphens: none;
+      -moz-hyphens: none;
+      -ms-hyphens: none;
+      hyphens: none;
+    }
+  }
+}
+
+.o-watermark {
+  width: 250px;
+  top: 15mm;
+  font-size: 80pt;
+  right: 25%;
+  position: absolute;
+  color: darkgrey;
+  z-index: 1;
+  transform: rotate(-27deg);
+}
