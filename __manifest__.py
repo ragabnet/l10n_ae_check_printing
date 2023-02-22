@@ -1,14 +1,14 @@
 # -*- coding: utf-8 -*-
 #################################################################################
-# Author      : ROOK FZ LLC (<https://rook.ae/>)
-# Copyright(c): 2020-Present ROOK.ae
+# Author      : Reson for IT Solutions (<https://reson.ae/>)
+# Copyright(c): 2020-Present reson.ae
 # All Rights Reserved.
 #
 # This program is copyright property of the author mentioned above.
 # You can`t redistribute it and/or modify it.
 #
 # You should have received a copy of the License along with this program.
-# If not, see <https://rook.ae/license/>
+# If not, see <https://reson.ae/license/>
 #################################################################################
 {
     'name': 'UAE Account Check',
@@ -20,11 +20,11 @@
         """,
     'summary': 'ADIB Check Printing',
     'category': 'Accounting/Localizations/Check',
-    'version': '16.0.1.0.0',
+    'version': '15.0.1.0.0',
     'author': 'Nabil Mohamed Ali Ragab',
-    'company': 'ROOK FZ LLC',
-    'maintainer': 'ROOK FZ LLC',
-    'website': 'https://www.rook.ae',
+    'company': 'Reson for IT Solutions',
+    'maintainer': 'Reson for IT Solutions',
+    'website': 'https://www.reson.ae',
     'depends': [
         'l10n_ae',
         'account',
@@ -51,6 +51,6 @@
     ],
     'currency': 'USD',
     'price': 0.00,
-    'support': 'i@rook.ae',
+    'support': 'i@reson.ae',
 
 }
